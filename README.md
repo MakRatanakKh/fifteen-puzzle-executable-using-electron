@@ -1,0 +1,2 @@
+# fifteen-puzzle-executable-using-electron
+This application was first wrote when I was studying computer science year 2 as a team project. The technology that I and my team use was HTML, CSS, and JavaScript. Back then it was just a web application. But Now I have updated the code to improve interface and package it to executable application for various operating system such as Ubuntu, Windows and MacOS.
