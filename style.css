@@ -1,0 +1,440 @@
+#monitor {
+    display: inline-block;
+    background-color: #efefef;
+    width: 339px;
+    height: 560px;
+    border: 3px solid #bbb;
+    border-radius: 10px;
+}
+
+#title {
+    font-size: 37px;
+    text-align: center;
+    color: #8000f8;
+    margin-top: 10px;
+}
+
+#time,
+#move {
+    text-align: center;
+    font-size: 27px;
+    color: #d25900;
+}
+
+#time_pause {
+    margin: auto;
+    margin-top: 8px;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+#name {
+    font-size: 22px;
+}
+
+#pauseBtn,
+#resetBtn,
+#exitBtn,
+#aboutBtn {
+    border: 0px solid yellow;
+    background-color: #23b90d;
+    color: white;
+    display: inline-block;
+    padding: 5px 8px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#masterBox {
+    display: inline-block;
+    background-color: #efefef;
+    width: 619px;
+    height: 560px;
+    padding: 0px 0px;
+    border: 3px solid #bbb;
+    border-radius: 10px;
+    margin-top: 4px;
+}
+
+#about {
+    display: inline-block;
+    background-color: #efefef;
+    width: 333px;
+    height: 560px;
+    border: 3px solid #bbb;
+    border-radius: 10px;
+}
+
+#about_us {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.about_page {
+    color: #0cd200;
+}
+
+.name {
+    font-size: 23px;
+    /*color: #b2b94b;*/
+}
+
+#this_game_is_created {
+    font-size: 22px;
+    /*color: #deb579;*/
+}
+
+.afterNiptict {
+    font-size: 20px;
+    /*color: #1da1a1;*/
+}
+
+#niptict {
+    font-size: 20px;
+    margin-top: -5px;
+}
+
+#colorbox {
+    width: 521px;
+    margin: auto;
+    display: block;
+    position: sticky;
+}
+
+#logo1 {
+    width: 150px;
+}
+
+#logo2 {
+    width: 200px;
+    height: 120px;
+}
+
+#logo_container1 {
+    width: fit-content;
+    width: -moz-fit-content;
+    border: 0px solid black;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#logo_container2 {
+    width: fit-content;
+    width: -moz-fit-content;
+    border: 0px solid black;
+    margin: auto;
+    margin-top: 15px;
+}
+
+#c1,
+#c2,
+#c3,
+#c4,
+#c5,
+#c6,
+#c7 {
+    width: 69px;
+    height: 18px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+#c1 {
+    background-color: #654fdf;
+}
+
+#c2 {
+    background-color: #02b0b8;
+}
+
+#c3 {
+    background-color: #11b835;
+}
+
+#c4 {
+    background-color: #800080;
+}
+
+#c5 {
+    background-color: #e62f8b;
+}
+
+#c6 {
+    background-color: #c4c700;
+}
+
+#color_chooser {
+    margin: auto;
+    margin-top: 28px;
+}
+
+#c1,
+#c2,
+#c3,
+#c4,
+#c5,
+#c6 {
+    width: 51px;
+    height: 49px;
+    border-radius: 69px;
+    margin: 5px;
+    border: 0px solid blue;
+    cursor: pointer;
+}
+
+#pauseBox {
+    border-radius: 10px;
+    background-color: #000000c4;
+    width: 588px;
+    height: 534px;
+    margin: auto;
+    padding: 12px 16px 14px 16px;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    line-height: 534px;
+    vertical-align: middle;
+    color: #ffffff;
+    font-size: 45px;
+    display: none;
+}
+
+#ubox {
+    border-radius: 10px;
+    background-color: transparent;
+    width: 588px;
+    height: 534px;
+    margin: auto;
+    padding: 12px 16px 14px 16px;
+    position: absolute;
+    z-index: 0;
+}
+
+.ubutton {
+    text-decoration: none;
+    background-color: #b7b7b7;
+    border: 0px solid blue;
+    padding: 30px 45px;
+    display: inline-block;
+    margin: 4px 2px;
+    width: 50px;
+    height: 66px;
+    border-radius: 15px;
+    line-height: 66px;
+    vertical-align: middle;
+}
+
+#box {
+    border-radius: 10px;
+    background-color: transparent;
+    width: 588px;
+    height: 534px;
+    margin: auto;
+    padding: 12px 16px 14px 16px;
+    position: absolute;
+    z-index: 1;
+}
+
+.button {
+    background-color: #02b0b8;
+    border: 0px solid blue;
+    color: white;
+    padding: 30px 0px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 52px;
+    margin: 4px 2px;
+    width: 140px;
+    height: 66px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 66px;
+    vertical-align: middle;
+    /* make text unselectable */
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
+}
+
+.button:hover {
+    background-color: blue;
+}
+
+#instruction,
+#win_interface,
+#level_menu,
+#interface {
+    border: 0px solid red;
+    margin: auto;
+    padding-top: 30px;
+    text-align: center;
+    width: 619px;
+    height: 373px;
+    background-color: #23cbe1;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+#level_menu {
+    z-index: -1;
+}
+
+#interface {
+    z-index: 1;
+}
+
+#instruction {
+    z-index: -2;
+}
+
+.wb,
+.levelBtn,
+.menu_button {
+    border-radius: 20px;
+    background-color: #dfede9;
+    width: fit-content;
+    width: -moz-fit-content;
+    height: 40px;
+    color: #0d660d;
+    font-size: 35px;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.instruction_close_btn {
+    border-radius: 20px;
+    background-color: #dfede9;
+    width: fit-content;
+    width: -moz-fit-content;
+    height: 45px;
+    color: #0d660d;
+    font-size: 35px;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+#menu_button_container {
+    max-width: fit-content;
+    max-width: -moz-fit-content;
+    border: 0px solid black;
+    margin: auto;
+}
+
+#congrat_win,
+#congrat,
+#menu_title {
+    font-size: 55px;
+    margin: 30px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#menu_title {
+    margin-top: 0px;
+}
+
+#congrat {
+    margin-top: 5px;
+}
+
+#level_title {
+    font-size: 55px;
+    margin: 30px;
+    color: white;
+}
+
+#winScreen,
+#menuScreen {
+    margin: auto;
+}
+
+#win_screen_container {
+    width: 100%;
+    height: 501px;
+    padding-top: 90px;
+    background-color: transparent;
+    display: none;
+}
+
+#menu_screen_container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    background-color: transparent;
+}
+
+#win_detailer {
+    margin: auto;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#playScreen {
+    width: -moz-fit-content;
+    height: -moz-fit-content;
+    width: fit-content;
+    height: fit-content;
+    display: none;
+    border-radius: 10px;
+    background-color: transparent;
+    margin: auto;
+}
+
+#instruction {
+    z-index: 2;
+    font-size: 28px;
+    color: white;
+    display: none;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 403px;
+}
+
+p {
+    margin: 10px;
+}
+
+body {
+    background-color: #0009;
+    margin: 0px;
+    width: 974px;
+    overflow: hidden;
+}
+
+#vertical_gap {
+    visibility: hidden;
+    border: 1px solid black;
+    height: 10px;
+}
+
+table#block {
+    margin-top: -7px;
+    margin-left: -2px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#addedInfo {
+    margin-top: 15px;
+}

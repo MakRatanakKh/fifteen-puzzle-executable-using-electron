@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fifteen Puzzle Game</title>
+    <meta name="author" content="Mak Ratanak, Hean Phearak, Thy Ratana" />
+    <meta name="keyword" content="15 puzzle game" />
+    <meta name="description" content="This is fifthteen puzzle game" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="./img/puzzle_logo.png" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div id="menu_screen_container">
+        <div id="menuScreen">
+            <div id="interface">
+                <div id="menu_title">FIFTEEN PUZZLE</div>
+                <div id="vertical_gap">Vertical Gap</div>
+                <div id="menu_button_container">
+                    <div class="menu_button" onclick="chooseLevel();">Play</div>
+                    <div class="menu_button" onclick="openInstr();">Instruction</div>
+                    <div class="menu_button" name="aboutBtn">About Us</div>
+                    <div class="menu_button" name="exitBtn">Exit</div>
+                </div>
+            </div>
+            <div id="level_menu">
+                <div id="level_title">level</div>
+                <div class="levelBtn" onclick="playLevel('easy');">Easy</div>
+                <div class="levelBtn" onclick="playLevel('normal');">Normal</div>
+                <div class="levelBtn" onclick="playLevel('hard');">Hard</div>
+            </div>
+            <div id="instruction">
+                <h1>INSTRUCTIONS</h1>
+                <div class="instr">
+                    Move tiles in grid to order them from 1 to 15. Click on button Reset to restart game. Click on button Pause to pause game. To move a tile you can click on it.
+                </div>
+                <div class="instruction_close_btn" onclick="closeInstr();">Close</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="win_screen_container">
+        <div id="winScreen">
+            <div id="win_interface">
+                <div id="congrat">Congratulation!</div>
+                <div id="congrat_win">You Win!</div>
+                <div id="win_detailer">You move 0 times within 0s</div>
+                <div class="wb" onclick="location.reload();">Play again</div>
+            </div>
+        </div>
+    </div>
+    <div id="playScreen">
+        <table id="block">
+            <tr>
+                <td>
+                    <div id="monitor">
+                        <div id="title">Fifteen Puzzle Game</div>
+                        <div id="time">Time: 0s</div>
+                        <div id="move">Move: 0</div>
+                        <div id="time_pause">
+                            <div id="pauseBtn" onclick="pauseGame();">Pause</div>
+                            <div id="resetBtn" onclick="location.reload(true);">Home</div>
+                            <div id="aboutBtn" name="aboutBtn">About Us</div>
+                            <div id="exitBtn" name="exitBtn">Exit</div>
+                        </div>
+                        <table id="color_chooser">
+                            <tr>
+                                <td id="c1" onclick="changeColorValue('#654fdf', '#8872ff');"></td>
+                                <td id="c2" onclick="changeColorValue('#02b0b8', '#03e9f4');"></td>
+                                <td id="c3" onclick="changeColorValue('#11b835', '#18e444');"></td>
+                            </tr>
+
+                            <tr></tr>
+                            <tr>
+                                <td id="c4" onclick="changeColorValue('#800080', '#d706d7');"></td>
+                                <td id="c5" onclick="changeColorValue('#e62f8b', '#ff84c2');"></td>
+                                <td id="c6" onclick="changeColorValue('#c4c700', '#ecf005');"></td>
+                            </tr>
+                        </table>
+                        <div id="logo_container1">
+                            <img id="logo1" alt="logo" src="img/puzzle.gif" />
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div id="masterBox">
+                        <div id="ubox">
+                            <div class="ubutton"></div>
+                            <div class="ubutton"></div>
+                            <div class="ubutton"></div>
+                            <div class="ubutton"></div>
+                            <div class="ubutton"></div>
+                            <div class="ubutton"></div>
+                            <div class="ubutton"></div>
+                            <div class="ubutton"></div>
+                            <div class="ubutton"></div>
+                            <div class="ubutton"></div>
+                            <div class="ubutton"></div>
+                            <div class="ubutton"></div>
+                            <div class="ubutton"></div>
+                            <div class="ubutton"></div>
+                            <div class="ubutton"></div>
+                            <div class="ubutton"></div>
+                        </div>
+                        <div id="box">
+                            <div id="b1" onmousedown="soundClick.play();" onmouseover="changeColorOnMouse('b1');" onmouseout="changeColorOutMouse('b1');" onclick="moveBox('b1');" class="row=0 col=0 x=0 y=0 button">
+                                1
+                            </div>
+                            <div id="b2" onmousedown="soundClick.play();" onmouseover="changeColorOnMouse('b2');" onmouseout="changeColorOutMouse('b2');" onclick="moveBox('b2');" class="row=0 col=1 x=0 y=0 button">
+                                2
+                            </div>
+                            <div id="b3" onmousedown="soundClick.play();" onmouseover="changeColorOnMouse('b3');" onmouseout="changeColorOutMouse('b3');" onclick="moveBox('b3');" class="row=0 col=2 x=0 y=0 button">
+                                3
+                            </div>
+                            <div id="b4" onmousedown="soundClick.play();" onmouseover="changeColorOnMouse('b4');" onmouseout="changeColorOutMouse('b4');" onclick="moveBox('b4');" class="row=0 col=3 x=0 y=0 button">
+                                4
+                            </div>
+                            <div id="b5" onmousedown="soundClick.play();" onmouseover="changeColorOnMouse('b5');" onmouseout="changeColorOutMouse('b5');" onclick="moveBox('b5');" class="row=1 col=0 x=0 y=0 button">
+                                5
+                            </div>
+                            <div id="b6" onmousedown="soundClick.play();" onmouseover="changeColorOnMouse('b6');" onmouseout="changeColorOutMouse('b6');" onclick="moveBox('b6');" class="row=1 col=1 x=0 y=0 button">
+                                6
+                            </div>
+                            <div id="b7" onmousedown="soundClick.play();" onmouseover="changeColorOnMouse('b7');" onmouseout="changeColorOutMouse('b7');" onclick="moveBox('b7');" class="row=1 col=2 x=0 y=0 button">
+                                7
+                            </div>
+                            <div id="b8" onmousedown="soundClick.play();" onmouseover="changeColorOnMouse('b8');" onmouseout="changeColorOutMouse('b8');" onclick="moveBox('b8');" class="row=1 col=3 x=0 y=0 button">
+                                8
+                            </div>
+                            <div id="b9" onmousedown="soundClick.play();" onmouseover="changeColorOnMouse('b9');" onmouseout="changeColorOutMouse('b9');" onclick="moveBox('b9');" class="row=2 col=0 x=0 y=0 button">
+                                9
+                            </div>
+                            <div id="b10" onmousedown="soundClick.play();" onmouseover="changeColorOnMouse('b10');" onmouseout="changeColorOutMouse('b10');" onclick="moveBox('b10');" class="row=2 col=1 x=0 y=0 button">
+                                10
+                            </div>
+                            <div id="b11" onmousedown="soundClick.play();" onmouseover="changeColorOnMouse('b11');" onmouseout="changeColorOutMouse('b11');" onclick="moveBox('b11');" class="row=2 col=2 x=0 y=0 button">
+                                11
+                            </div>
+                            <div id="b12" onmousedown="soundClick.play();" onmouseover="changeColorOnMouse('b12');" onmouseout="changeColorOutMouse('b12');" onclick="moveBox('b12');" class="row=2 col=3 x=0 y=0 button">
+                                12
+                            </div>
+                            <div id="b13" onmousedown="soundClick.play();" onmouseover="changeColorOnMouse('b13');" onmouseout="changeColorOutMouse('b13');" onclick="moveBox('b13');" class="row=3 col=0 x=0 y=0 button">
+                                13
+                            </div>
+                            <div id="b14" onmousedown="soundClick.play();" onmouseover="changeColorOnMouse('b14');" onmouseout="changeColorOutMouse('b14');" onclick="moveBox('b14');" class="row=3 col=1 x=0 y=0 button">
+                                14
+                            </div>
+                            <div id="b15" onmousedown="soundClick.play();" onmouseover="changeColorOnMouse('b15');" onmouseout="changeColorOutMouse('b15');" onclick="moveBox('b15');" class="row=3 col=2 x=0 y=0 button">
+                                15
+                            </div>
+                        </div>
+                        <div id="pauseBox">GAME PAUSED</div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
