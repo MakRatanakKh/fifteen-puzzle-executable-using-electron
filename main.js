@@ -9,7 +9,7 @@ const createWindow = () => {
         frame: true,
         center: true,
         title: "Fifteen Puzzle Game",
-        resizable: true,
+        resizable: false,
         width: 976,
         height: 567,
         webPreferences: {
